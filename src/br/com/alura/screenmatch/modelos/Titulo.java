@@ -16,6 +16,10 @@ public class Titulo {
     private double somaAvaliacaoPublico;
     private double somaAvaliacaoCriticos;
 
+    public String getNome() {
+        return nome;
+    }
+
     public int getDuracaoEmMinutos() {
         return duracaoEmMinutos;
     }

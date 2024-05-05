@@ -28,4 +28,17 @@ public class Episodio implements Classificavel {
     public int getClassificacaoCritico() {
         return 4;
     }
+
+    public void exibirInformacaoEpisodio(){
+        System.out.printf("""
+                
+                *************************************
+                Episódio: %s
+                Numero do episódio: %d
+                Série: %s
+                *************************************
+
+                """, nomeEpisodio, numeroEpisodio, serie.getNome());
+    }
+
 }

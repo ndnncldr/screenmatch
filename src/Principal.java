@@ -56,6 +56,7 @@ public class Principal {
         episodio.setNumeroEpisodio(10);
         episodio.setSerie(serie);
         filtroRecomendacao.filtrar(episodio);
+        episodio.exibirInformacaoEpisodio();
 
 
     }
