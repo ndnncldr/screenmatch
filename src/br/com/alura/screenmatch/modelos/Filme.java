@@ -6,6 +6,10 @@ public class Filme extends Titulo implements Classificavel {
 
     private double bilheteria;
 
+    public Filme(String nome, int anoDeLancamento) {
+        super(nome, anoDeLancamento);
+    }
+
     public double getBilheteria() {
         return bilheteria;
     }
@@ -24,4 +28,8 @@ public class Filme extends Titulo implements Classificavel {
         return (int) getMediaAvaliacaoCriticos()/2;
     }
 
+    @Override
+    public String toString() {
+        return "Filme: %s (%d)".formatted(this.getNome(), this.getAnoDeLancamento());
+    }
 }

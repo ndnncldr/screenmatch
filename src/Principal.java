@@ -4,11 +4,11 @@ import br.com.alura.screenmatch.modelos.Episodio;
 import br.com.alura.screenmatch.modelos.Filme;
 import br.com.alura.screenmatch.modelos.Serie;
 
+import java.util.ArrayList;
+
 public class Principal {
     public static void main(String[] args) {
-        Filme filme = new Filme();
-        filme.setNome("Labirinto - A Magia do Tempo");
-        filme.setAnoDeLancamento(1986);
+        Filme filme = new Filme("Labirinto - A Magia do Tempo", 1986);
         filme.setGenero("Aventura");
         filme.setSinopse("""
                 Frustrada por ter de cuidar do irmão caçula enquanto seus pais estão fora,
@@ -25,9 +25,7 @@ public class Principal {
         filme.avaliarFilme(10.0, "critico");
         filme.exibirFichaTecnica();
 
-        Serie serie = new Serie();
-        serie.setNome("Doctor Who (2005-2022)");
-        serie.setAnoDeLancamento(2005);
+        Serie serie = new Serie("Doctor Who (2005-2022)", 2005);
         serie.setSinopse("""
                 O Doutor é um Senhor do Tempo - um alien de um planeta distante chamado Gallifrey
                 que tem dois corações e aproximadamente 900 anos. Em sua nave espacial, a TARDIS,
@@ -58,6 +56,9 @@ public class Principal {
         filtroRecomendacao.filtrar(episodio);
         episodio.exibirInformacaoEpisodio();
 
+        ArrayList<Filme> listaDeFilmes = new ArrayList<>();
+        listaDeFilmes.add(filme);
+        System.out.println(listaDeFilmes.get(0).toString());
 
     }
 }

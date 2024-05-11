@@ -16,6 +16,11 @@ public class Titulo {
     private double somaAvaliacaoPublico;
     private double somaAvaliacaoCriticos;
 
+    public Titulo(String nome, int anoDeLancamento) {
+        this.nome = nome;
+        this.anoDeLancamento = anoDeLancamento;
+    }
+
     public String getNome() {
         return nome;
     }
@@ -30,6 +35,10 @@ public class Titulo {
 
     public double getMediaAvaliacaoCriticos() {
         return mediaAvaliacaoCriticos;
+    }
+
+    public int getAnoDeLancamento() {
+        return anoDeLancamento;
     }
 
     public void setNome(String nome) {
@@ -57,7 +66,6 @@ public class Titulo {
     }
 
 
-
     public void exibirFichaTecnica() {
         System.out.printf("""
                 *************************************
@@ -70,8 +78,7 @@ public class Titulo {
                 Avaliação críticos (%d avaliações): %.2f
                 *************************************
 
-                """, nome, anoDeLancamento, genero, classicacaoIndicativa, sinopse,
-                totalAvaliacaoPublico, mediaAvaliacaoPublico, totalAvaliacaoCriticos, mediaAvaliacaoCriticos);
+                """, nome, anoDeLancamento, genero, classicacaoIndicativa, sinopse, totalAvaliacaoPublico, mediaAvaliacaoPublico, totalAvaliacaoCriticos, mediaAvaliacaoCriticos);
     }
 
     public void avaliarFilme(double nota, String tipoUsuario) {
@@ -83,9 +90,9 @@ public class Titulo {
         somarAvaliacaoFilme(nota, tipoUsuario);
 
         if (tipoUsuario.equals("publico")) {
-            mediaAvaliacaoPublico = somaAvaliacaoPublico/totalAvaliacaoPublico;
+            mediaAvaliacaoPublico = somaAvaliacaoPublico / totalAvaliacaoPublico;
         } else {
-            mediaAvaliacaoCriticos = somaAvaliacaoCriticos/totalAvaliacaoCriticos;
+            mediaAvaliacaoCriticos = somaAvaliacaoCriticos / totalAvaliacaoCriticos;
         }
 
     }
