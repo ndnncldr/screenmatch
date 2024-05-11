@@ -41,10 +41,6 @@ public class Titulo {
         return anoDeLancamento;
     }
 
-    public void setNome(String nome) {
-        this.nome = nome;
-    }
-
     public void setGenero(String genero) {
         this.genero = genero;
     }
@@ -55,10 +51,6 @@ public class Titulo {
 
     public void setClassicacaoIndicativa(String classicacaoIndicativa) {
         this.classicacaoIndicativa = classicacaoIndicativa;
-    }
-
-    public void setAnoDeLancamento(int anoDeLancamento) {
-        this.anoDeLancamento = anoDeLancamento;
     }
 
     public void setDuracaoEmMinutos(int duracaoEmMinutos) {
