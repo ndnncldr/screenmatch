@@ -73,7 +73,7 @@ public class Titulo {
                 """, nome, anoDeLancamento, genero, classicacaoIndicativa, sinopse, totalAvaliacaoPublico, mediaAvaliacaoPublico, totalAvaliacaoCriticos, mediaAvaliacaoCriticos);
     }
 
-    public void avaliarFilme(double nota, String tipoUsuario) {
+    public void avaliar(double nota, String tipoUsuario) {
         if (!tipoUsuario.equals("publico") && !tipoUsuario.equals("critico")) {
             System.out.println("Tipo de usuário inválido.");
             return;

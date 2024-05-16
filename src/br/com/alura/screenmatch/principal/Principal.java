@@ -1,3 +1,5 @@
+package br.com.alura.screenmatch.principal;
+
 import br.com.alura.screenmatch.calculos.CalculadoraTempo;
 import br.com.alura.screenmatch.calculos.FiltroRecomendacao;
 import br.com.alura.screenmatch.modelos.Episodio;
@@ -20,9 +22,9 @@ public class Principal {
                 """);
         filme.setClassicacaoIndicativa("Livre");
         filme.setDuracaoEmMinutos(101);
-        filme.avaliarFilme(8.0, "publico");
-        filme.avaliarFilme(5.7, "publico");
-        filme.avaliarFilme(10.0, "critico");
+        filme.avaliar(8.0, "publico");
+        filme.avaliar(5.7, "publico");
+        filme.avaliar(10.0, "critico");
         filme.exibirFichaTecnica();
 
         Serie serie = new Serie("Doctor Who (2005-2022)", 2005);
