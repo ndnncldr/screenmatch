@@ -5,6 +5,8 @@ import br.com.alura.screenmatch.modelos.Serie;
 import br.com.alura.screenmatch.modelos.Titulo;
 
 import java.util.ArrayList;
+import java.util.Collections;
+import java.util.List;
 
 public class PrincipalListas {
     public static void main(String[] args) {
@@ -41,6 +43,22 @@ public class PrincipalListas {
 
             }
         }
+
+        List<String> buscaPorAtores = new ArrayList<>();
+        buscaPorAtores.add("Tom Hanks");
+        buscaPorAtores.add("Tom Cruise");
+        buscaPorAtores.add("Leonardo DiCaprio");
+        buscaPorAtores.add("Denzel Washington");
+        buscaPorAtores.add("Chris Pine");
+        buscaPorAtores.add("Chris Evans");
+        System.out.println("Antes do sort: " + buscaPorAtores);
+
+        Collections.sort(buscaPorAtores);
+        System.out.println("Depois do sort: " + buscaPorAtores);
+//        Collections.sort(titulosAssistidos);
+        System.out.println("Por nome: " + titulosAssistidos);
+//        titulosAssistidos.sort(Comparator.comparing(Title::getYear));
+        System.out.println("Por data: " + titulosAssistidos);
 
 
     }

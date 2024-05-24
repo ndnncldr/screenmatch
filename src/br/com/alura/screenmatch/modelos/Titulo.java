@@ -21,6 +21,19 @@ public class Titulo {
         this.anoDeLancamento = anoDeLancamento;
     }
 
+    public Titulo(TituloOmdb tituloOmdb) {
+        this.nome = tituloOmdb.title();
+
+        if(tituloOmdb.year().length() > 4) {
+            throw new ErroConversaoAnoLancamento("Erro ao converter o ano de lançamento: " + tituloOmdb.year());
+        }
+
+        this.anoDeLancamento = Integer.parseInt(String.valueOf(tituloOmdb.year().substring(0, 4 )));
+        this.classicacaoIndicativa = tituloOmdb.rated();
+        this.genero = tituloOmdb.genre();
+        this.sinopse = tituloOmdb.plot();
+    }
+
     public String getNome() {
         return nome;
     }
@@ -99,4 +112,22 @@ public class Titulo {
         }
     }
 
+    @Override
+    public String toString() {
+        return "Titulo{" +
+                "nome='" + nome + '\'' +
+                ", genero='" + genero + '\'' +
+                ", sinopse='" + sinopse + '\'' +
+                ", classicacaoIndicativa='" + classicacaoIndicativa + '\'' +
+                ", anoDeLancamento=" + anoDeLancamento +
+                ", totalAvaliacaoCriticos=" + totalAvaliacaoCriticos +
+                ", totalAvaliacaoPublico=" + totalAvaliacaoPublico +
+                ", inclusoPlano=" + inclusoPlano +
+                ", duracaoEmMinutos=" + duracaoEmMinutos +
+                ", mediaAvaliacaoPublico=" + mediaAvaliacaoPublico +
+                ", mediaAvaliacaoCriticos=" + mediaAvaliacaoCriticos +
+                ", somaAvaliacaoPublico=" + somaAvaliacaoPublico +
+                ", somaAvaliacaoCriticos=" + somaAvaliacaoCriticos +
+                '}';
+    }
 }
