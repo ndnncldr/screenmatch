@@ -1,0 +1,47 @@
+[
+  {
+    "Nome": "The Lord of the Rings: The Fellowship of the Ring",
+    "Genero": "Action, Adventure, Drama",
+    "Sinopse": "A meek Hobbit from the Shire and eight companions set out on a journey to destroy the powerful One Ring and save Middle-earth from the Dark Lord Sauron.",
+    "ClassicacaoIndicativa": "PG-13",
+    "AnoDeLancamento": 2001,
+    "TotalAvaliacaoCriticos": 0,
+    "TotalAvaliacaoPublico": 0,
+    "InclusoPlano": false,
+    "DuracaoEmMinutos": 0,
+    "MediaAvaliacaoPublico": 0.0,
+    "MediaAvaliacaoCriticos": 0.0,
+    "SomaAvaliacaoPublico": 0.0,
+    "SomaAvaliacaoCriticos": 0.0
+  },
+  {
+    "Nome": "The Lord of the Rings: The Two Towers",
+    "Genero": "Action, Adventure, Drama",
+    "Sinopse": "While Frodo and Sam edge closer to Mordor with the help of the shifty Gollum, the divided fellowship makes a stand against Sauron\u0027s new ally, Saruman, and his hordes of Isengard.",
+    "ClassicacaoIndicativa": "PG-13",
+    "AnoDeLancamento": 2002,
+    "TotalAvaliacaoCriticos": 0,
+    "TotalAvaliacaoPublico": 0,
+    "InclusoPlano": false,
+    "DuracaoEmMinutos": 0,
+    "MediaAvaliacaoPublico": 0.0,
+    "MediaAvaliacaoCriticos": 0.0,
+    "SomaAvaliacaoPublico": 0.0,
+    "SomaAvaliacaoCriticos": 0.0
+  },
+  {
+    "Nome": "The Lord of the Rings: The Return of the King",
+    "Genero": "Action, Adventure, Drama",
+    "Sinopse": "Gandalf and Aragorn lead the World of Men against Sauron\u0027s army to draw his gaze from Frodo and Sam as they approach Mount Doom with the One Ring.",
+    "ClassicacaoIndicativa": "PG-13",
+    "AnoDeLancamento": 2003,
+    "TotalAvaliacaoCriticos": 0,
+    "TotalAvaliacaoPublico": 0,
+    "InclusoPlano": false,
+    "DuracaoEmMinutos": 0,
+    "MediaAvaliacaoPublico": 0.0,
+    "MediaAvaliacaoCriticos": 0.0,
+    "SomaAvaliacaoPublico": 0.0,
+    "SomaAvaliacaoCriticos": 0.0
+  }
+]

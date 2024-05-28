@@ -24,9 +24,10 @@ public class Titulo {
     public Titulo(TituloOmdb tituloOmdb) {
         this.nome = tituloOmdb.title();
 
-        if(tituloOmdb.year().length() > 4) {
-            throw new ErroConversaoAnoLancamento("Erro ao converter o ano de lançamento: " + tituloOmdb.year());
-        }
+
+//        if(tituloOmdb.year().length() > 4) {
+//            throw new ErroConversaoAnoLancamento("Erro ao converter o ano de lançamento: " + tituloOmdb.year());
+//        }
 
         this.anoDeLancamento = Integer.parseInt(String.valueOf(tituloOmdb.year().substring(0, 4 )));
         this.classicacaoIndicativa = tituloOmdb.rated();
