@@ -2,6 +2,6 @@ package br.com.alura.screenmatch.service;
 
 import com.fasterxml.jackson.core.JsonProcessingException;
 
-public interface IConverteDados {
+public interface IConverterDados {
     <T> T obterDados(String json, Class<T> DadosSerie) throws JsonProcessingException;
 }
